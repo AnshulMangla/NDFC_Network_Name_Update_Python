@@ -1,6 +1,10 @@
-# NDFC Network Management Tools
+# NDFC Network Name Update Script
 
-A collection of Python scripts to interact with Nexus Dashboard Fabric Controller (NDFC) REST APIs for network management tasks.
+A Python script which updates the Network Name of a given Network in NDFC.
+
+P.S: the attribute displayName is mapped to the Network Name displayed in NDFC while the "networkName" is an immutable unique key, which can't be changed.  
+
+However this script uses the "networkName" internally and is not exposed to the user and the user needs to only input the new displayName and current displayName
 
 ## What's Included
 
